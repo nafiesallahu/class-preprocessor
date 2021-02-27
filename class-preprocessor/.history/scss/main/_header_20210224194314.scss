@@ -1,0 +1,71 @@
+.main-header {
+  font-family: $inter;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  font-size: 16px;
+}
+.logo {
+  float: left;
+}
+
+/* .primary-nav  a {
+  color: $textColor;
+  text-decoration: none;
+}
+
+.primary-nav  li {
+  margin-right: 34px;
+}
+
+.primary-nav ul {
+  display: flex;
+}
+ */
+
+.primary-nav {
+  float: left;
+  ul {
+    display: flex;
+  }
+  li {
+    margin-right: 34px;
+  }
+  a {
+    color: $textColor;
+    text-decoration: none;
+  }
+}
+@mixin doBtn($width: 132px) {
+  text-decoration: none;
+  color: $accent;
+  background: transparent;
+  border: 1px solid $accent;
+  height: 44px;
+  line-height: 42px;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 8px;
+  width: $width;
+  text-align: center;
+}
+.button-nav {
+  float: right;
+
+  ul {
+    display: flex;
+  }
+  .btn {
+    @include doBtn();
+    margin-right: 18px;
+    &--full {
+      background: $accent;
+      color: white;
+      margin-right: 0;
+    }
+  }
+}
+
+.button-nav li:last-child a {
+  margin-right: 0;
+}

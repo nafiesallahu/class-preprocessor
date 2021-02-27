@@ -1,0 +1,16 @@
+.hero-banner {
+  @include fullBlock;
+  &__text,
+  &__image {
+    float: left;
+    width: 50%;
+  }
+  h1 {
+    margin-bottom: 74px;
+    font-family: $playfair;
+    font-size: 64px;
+    line-height: 125%;
+    color: $titleColor;
+    font-weight: bold;
+  }
+}

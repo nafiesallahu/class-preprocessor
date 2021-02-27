@@ -1,0 +1,19 @@
+body {
+  font-family: $mulish;
+  font-size: $bodyFont;
+  color: $textColor;
+}
+@mixin fullBlock {
+  width: 100%;
+  float: left;
+}
+.block-section {
+  @include fullBlock;
+}
+
+.container {
+  max-width: 1220px;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}

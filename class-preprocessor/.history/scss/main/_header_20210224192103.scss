@@ -1,0 +1,48 @@
+.main-header {
+  font-family: $inter;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  font-size: 16px;
+}
+.logo {
+  float: left;
+}
+
+/* .primary-nav  a {
+  color: $textColor;
+  text-decoration: none;
+}
+
+.primary-nav  li {
+  margin-right: 34px;
+}
+
+.primary-nav ul {
+  display: flex;
+}
+ */
+
+.primary-nav {
+  float: left;
+  ul {
+    display: flex;
+  }
+  li {
+    margin-right: 34px;
+  }
+  a {
+    color: $textColor;
+    text-decoration: none;
+  }
+}
+.button-nav {
+  float: left;
+  float: right;
+  ul {
+    display: flex;
+  }
+  .btn {
+    text-decoration: none;
+    color: $accent;
+  }
+}

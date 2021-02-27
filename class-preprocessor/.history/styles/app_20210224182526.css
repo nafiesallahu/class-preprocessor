@@ -1,0 +1,14 @@
+html {
+  background: red;
+   transform:translate(10px);
+  display: flex;
+  justify-content:center;
+  align-items:center;
+}
+
+p {
+  transform:translate(10px);
+  display: flex;
+  justify-content:center;
+  align-items:center;
+}  

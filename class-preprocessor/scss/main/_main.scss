@@ -1,0 +1,336 @@
+.hero-banner {
+  @include fullBlock;
+  &__text,
+  &__image {
+    float: left;
+    width: 50%;
+  }
+
+  form {
+    display: grid;
+    grid-template-columns: 0.4fr 0.1fr;
+    gap: 35px;
+    #loc,
+    #acc,
+    #grade,
+    #date {
+      width: 220px;
+      height: 52px;
+      border: 0.8px solid #afb0b9;
+      box-sizing: border-box;
+      border-radius: 6px;
+      padding-left: 25px;
+    }
+  }
+  h1 {
+    margin-bottom: 74px;
+    font-family: $playfair;
+    font-size: 64px;
+    line-height: 125%;
+    color: $titleColor;
+    font-weight: bold;
+  }
+  h4 {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    color: #202336;
+  }
+  hr {
+    width: 32px;
+    background: #202336;
+    border-radius: 4px;
+    display: table-caption;
+    margin: 21px 0 48px 0;
+    height: 4px;
+  }
+}
+
+.btn {
+  @include doBtn(180px);
+  &--full {
+    background: $accent;
+    color: white;
+    margin-right: 0;
+    height: 52px;
+    font-size: 17px;
+    line-height: 48px;
+  }
+}
+#full {
+  margin-top: 16px;
+}
+
+/////////////////////explore-the-world/////////////////////////////
+
+.explore-the-world {
+  @include fullBlock;
+  margin-top: 286px;
+  margin-bottom: 262px;
+  .full-explore {
+    height: 550px;
+  }
+  &__text,
+  &__image {
+    float: left;
+    width: 50%;
+    height: 534px;
+  }
+}
+.explore-the-world {
+  &__text {
+    padding: 103px 0 102px 102px;
+
+    h3 {
+      font-family: $playfair;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 50px;
+      margin-bottom: 20px;
+      color: #000000;
+
+      mix-blend-mode: normal;
+    }
+    h6 {
+      font-family: Mulish;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 17px;
+      line-height: 30px;
+      margin-bottom: 26px;
+      color: $gray-light;
+      mix-blend-mode: normal;
+    }
+    h5 {
+      font-family: Mulish;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 36px;
+      /* or 150% */
+      color: #000000;
+      margin-bottom: 40px;
+      mix-blend-mode: normal;
+    }
+  }
+  .btn {
+    @include doBtn(164px);
+    &--full {
+      background: $accent;
+      color: white;
+      margin-right: 0;
+      height: 48px;
+      font-size: 17px;
+      line-height: 45px;
+    }
+  }
+}
+//////////////////featured-destinations/////////////////
+.featured-destinations {
+  width: 100%;
+  float: left;
+  margin-bottom: 237px;
+}
+.full-featured {
+  &__view-all {
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    h2 {
+      font-family: Playfair Display;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 50px;
+      /* identical to box height, or 139% */
+
+      color: #000000;
+
+      mix-blend-mode: normal;
+    }
+    h6 {
+      padding-right: 45px;
+      justify-self: right;
+      font-family: Inter;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 17px;
+      /* line-height: 60px; */
+      display: flex;
+      align-items: center;
+      color: #fb8f1d;
+      mix-blend-mode: normal;
+      line-height: 60px;
+    }
+  }
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  // gap: 0px 18px;
+  grid-template-areas: "Indonesia China Switzerland Montenegro";
+}
+.Indonesia {
+  grid-area: Indonesia;
+}
+.China {
+  grid-area: China;
+}
+.Switzerland {
+  grid-area: Switzerland;
+}
+.Montenegro {
+  grid-area: Montenegro;
+}
+///////////////explore-the-world//////////////////////////
+.explore-the-world {
+  width: 100%;
+  float: left;
+  margin-bottom: 237px;
+}
+///////////////////Testimonials///////////////////////
+.Testimonials {
+  margin-bottom: 178px;
+  width: 100%;
+  float: left;
+  &__stars {
+    margin-top: 145px;
+    margin-bottom: 30px;
+    img {
+      width: 25px;
+      height: 24px;
+    }
+  }
+  &__image {
+    float: left;
+    width: 50%;
+    height: 615px;
+    .photo {
+      position: absolute;
+      top: 3710px;
+      right: 167px;
+    }
+  }
+  &__text {
+    float: left;
+    width: 50%;
+    height: 615px;
+    h3 {
+      font-family: $playfair;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 50px;
+      margin-bottom: 20px;
+      color: #000000;
+
+      mix-blend-mode: normal;
+    }
+  }
+}
+
+#name {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 48px;
+
+  color: #000000;
+
+  mix-blend-mode: normal;
+}
+#possition {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 48px;
+  color: rgba(0, 0, 0, 0.85);
+  mix-blend-mode: normal;
+}
+.rect-img {
+  position: absolute;
+  width: 132px;
+  height: 60px;
+  left: 1220px;
+  top: 4141px;
+  background: #ffffff;
+  border-radius: 16px 0px 0px 0px;
+}
+.lr {
+  position: absolute;
+  right: 176px;
+  top: 4153px;
+  &__l {
+    margin-right: 22px;
+  }
+  &__ls {
+    position: absolute;
+    top: 15px;
+    left: 16px;
+  }
+  &__r {
+    position: absolute;
+    top: 15px;
+    left: 84px;
+  }
+}
+//////////trending stories///////////////
+.flex-container {
+  display: flex;
+}
+.meditation,
+.food,
+.pyramid {
+  margin-right: 50px;
+}
+.img-mm,
+.img-ff,
+.pp-img,
+.ss-img {
+  height: 230px;
+  width: 260px;
+  border-radius: 10px;
+}
+
+.img-m,
+.img-f,
+.p-img,
+.s-img,
+p {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 30px;
+  /* or 158% */
+
+  color: #000000;
+  margin-bottom: 13px;
+  mix-blend-mode: normal;
+}
+
+.m-read,
+.p-read,
+.s-read,
+.f-read {
+  margin-top: 23px;
+  margin-bottom: 271px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 28px;
+  /* identical to box height, or 187% */
+
+  color: #fb8f1d;
+
+  mix-blend-mode: normal;
+}

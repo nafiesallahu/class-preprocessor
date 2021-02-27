@@ -1,0 +1,8 @@
+.hero-banner {
+  @include fullBlock;
+  &__text,
+  &__image {
+    float: left;
+    width: 50%;
+  }
+}

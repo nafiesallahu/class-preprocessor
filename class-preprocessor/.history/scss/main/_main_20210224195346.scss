@@ -1,0 +1,9 @@
+.hero-banner {
+  float: left;
+  width: 100%;
+}
+
+@mixin fullBlock {
+  width: 100%;
+  float: left;
+}
